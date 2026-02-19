@@ -64,47 +64,9 @@ public class OrangeHRM {
 		driver.findElement(By.xpath("//button[@role='none']")).click();
 		Thread.sleep(4000);
 		
-		// User Search
-		
-		driver.findElement(By.xpath("//input[@class='oxd-input oxd-input--active']")).sendKeys("Jobinsam@6742");
-		Thread.sleep(4000);
-		
-		// Static Dropdown 1
-		
-		WebElement dropdown = driver.findElement(By.xpath("(//div[@class='oxd-select-text-input'])[1]"));
-		
-		Select Dropdown = new Select(dropdown);
-		
-		Dropdown.selectByContainsVisibleText("ESS");
-		
-		String Userrole = Dropdown.getFirstSelectedOption().getText();
-		
-		System.out.println("The Selected Userrole is" + Userrole);
 		
 		
-		// Dynamic Dropdown Element
-		
-		driver.findElement(By.xpath("//input[@placeholder='Type for hints...']")).sendKeys("Jobin Sam");
-		Thread.sleep(4000);
-		
-		
-		
-		// Static Dropdown 2
-		
-		WebElement dropdown1 = driver.findElement(By.xpath("(//div[@class='oxd-select-text-input'])[2]"));
-		
-		Select Dropdown2 = new Select(dropdown1);
-		
-		Dropdown2.selectByContainsVisibleText("Enabled");
-		
-		
-		
-		
-				
-				
-		
-		
-		
+	
 
 	}
 
